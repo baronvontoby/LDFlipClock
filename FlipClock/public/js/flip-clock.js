@@ -109,13 +109,13 @@
         let month = deadlineDate[1];
         let year = deadlineDate[2];
     
-        var deadline = new Date(2020, 11, 25);
+        var deadline = new Date(year, month, day);
         
         console.log(deadlineDate);
     
         var c = new Clock(deadline);
         // document.body.appendChild(c.el);
-        document.getElementById('count-down').appendChild(c.el);
+        document.getElementById('count-down-clock').appendChild(c.el);
 
 
 

@@ -29,7 +29,7 @@ if ( ! class_exists( 'Flip_Clock_Shortcode')):
             
             wp_localize_script( 'flip-clock-js', 'deadlineDate', array($day, $month, $year)  );
 
-            return '<div id="count-down"></div>';
+            return '<div id="count-down-clock"></div>';
         }
         
     }

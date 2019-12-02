@@ -21,4 +21,15 @@ class Flip_Clock_Database {
             dbDelta ( $sql );
     }
 
+    public static function deleteDatabaseEntry() {
+        if(current_user_can( 'delete_posts')) {
+            //execute code
+        }
+        if(current_user_can('editor') || current_user_can('admin')) {
+            //execute code
+        }
+    }
+
+    
+
 }
